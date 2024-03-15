@@ -1,0 +1,35 @@
+{
+  "name": "boss-masterlist",
+  "displayName": "BOSS masterlist.txt",
+  "description": "Syntax highlighting for BOSS masterlists",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "repository": "https://github.com/ernieIzde8ski/vscode-boss-masterlist",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "boss-masterlist",
+        "aliases": [
+          "BOSS Masterlist",
+          "boss-masterlist"
+        ],
+        "extensions": [
+          "masterlist.txt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "boss-masterlist",
+        "scopeName": "source.boss_masterlist",
+        "path": "./syntaxes/boss-masterlist.tmLanguage.json"
+      }
+    ]
+  }
+}

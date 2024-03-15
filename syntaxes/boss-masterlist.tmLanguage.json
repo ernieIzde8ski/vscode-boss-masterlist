@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "BOSS Masterlist",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#control" },
+    { "include": "#functions" },
+    { "include": "#keywords" },
+    { "include": "#strings" }
+  ],
+  "scopeName": "source.boss_masterlist",
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-dash.boss-masterlist",
+          "begin": "//",
+          "end": "\n"
+        },
+        {
+          "name": "comment.block.boss-masterlist",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "control": {
+      "name": "keyword.control.boss-masterlist",
+      "match": "\\b(IF|IFNOT)\\b"
+    },
+    "functions": {
+      "name": "support.function.boss-masterlist",
+      "match": "[A-Z]+(?=\\()"
+    },
+    "keywords": {
+      "name": "keyword.other",
+      "match": "[A-Z]+(?<!BASH)(?=\\s*:)"
+    },
+    "strings": {
+      "name": "string.quoted.double.boss-masterlist",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.boss-masterlist",
+          "match": "\\\\."
+        }
+      ]
+    }
+  }
+}
