@@ -33,8 +33,8 @@
       "match": "[A-Z]+(?=\\()"
     },
     "keywords": {
-      "name": "keyword.other",
-      "match": "[A-Z]+(?<!BASH)(?=\\s*:)"
+      "name": "keyword.other.boss-masterlist",
+      "match": "(?:GLOBAL\\s*)?(?:SAY|TAG|REQ|INC|DIRTY|WARN|ERROR|SET)(?=:)"
     },
     "strings": {
       "name": "string.quoted.double.boss-masterlist",

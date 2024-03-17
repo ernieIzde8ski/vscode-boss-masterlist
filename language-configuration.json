@@ -24,8 +24,8 @@
   ],
   "folding": {
     "markers": {
-      "start": "BEGINGROUP:.*",
-      "end": "ENDGROUP:.*"
+      "start": "BEGINGROUP:",
+      "end": "ENDGROUP:"
     }
   }
 }
