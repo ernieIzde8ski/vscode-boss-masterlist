@@ -5,6 +5,7 @@
     { "include": "#comments" },
     { "include": "#control" },
     { "include": "#functions" },
+    { "include": "#groups" },
     { "include": "#keywords" },
     { "include": "#strings" }
   ],
@@ -32,9 +33,13 @@
       "name": "support.function.boss-masterlist",
       "match": "[A-Z]+(?=\\()"
     },
+    "groups": {
+      "name": "entity.name.type.group.boss-masterlist",
+      "match": "(?<=(?:BEGIN|END)GROUP:\\s+)[^\\n]+"
+    },
     "keywords": {
       "name": "keyword.other.boss-masterlist",
-      "match": "(?:GLOBAL\\s*)?(?:SAY|TAG|REQ|INC|DIRTY|WARN|ERROR|SET)(?=:)"
+      "match": "(?:GLOBAL\\s*)?(?:SAY|TAG|REQ|INC|DIRTY|WARN|ERROR|SET|MOD|(?:BEGIN|END)GROUP)(?=:)"
     },
     "strings": {
       "name": "string.quoted.double.boss-masterlist",
